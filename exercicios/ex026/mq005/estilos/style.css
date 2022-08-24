@@ -2,6 +2,8 @@
 
 * {
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 body, html {
@@ -12,10 +14,75 @@ header {
     background-color: gray;
 }
 
+header > h1 {
+    padding: 10px;
+    text-align: center;
+}
+
+div#contem {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+div#hover:hover {
+    background-color: white;
+    color: black;
+}
+
+label {
+    display: block;
+    padding-top: 13px;
+    color: white;
+    font-weight: bold;
+}
+
+span#burger {
+    color: white;
+    text-align: center;
+    width: 20px;
+    padding: 10px;
+    padding-left: 5px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
 menu {
     display: none;
 }
 
 menu > ul {
-    
+    list-style-type: none;
+}
+
+menu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    background-color: rgb(87, 87, 87);
+    color: white;
+    text-align: center;
+    border-top: 2px solid gray;
+}
+
+menu a:hover {
+    background-color: gray;
+}
+
+main {
+    width: 90%;
+    background-color: white;
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+article h2 {
+    padding-bottom: 20px;
+}
+
+article p {
+    text-align: justify;
+    margin-bottom: 10px;
+    text-indent: 20px;
 }
